@@ -16,6 +16,10 @@ app.get("/doctors", (request, response) => {
   response.send(stratford.doctors);
 });
 
+app.get("/hospitals", (request, response) => {
+  response.send(stratford.hospitals);
+});
+
 app.listen(PORT, ()=>{
     console.log("listening on port" + PORT)
 })
